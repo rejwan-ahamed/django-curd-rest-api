@@ -21,7 +21,7 @@ This command will start the virtual environment
 
     4. change port to 3306 in setting file
 
-    5. Insert the sql file in the following database
+    5. Insert the sql file in the following database. You will find database in DATA SEEDS folder
 ## Start server
     1. pipshell
     
@@ -32,13 +32,15 @@ This command will start the virtual environment
 
 ```http
   GET /store/cars/
+  GET /customer/allcustomer/
 ```
 
 
-#### Get item
+#### Get single item
 
 ```http
   GET /store/cars/${id}
+  GET /customer/singlecustomer/${id}
 ```
 
 | Parameter | Type     | Description                       |
