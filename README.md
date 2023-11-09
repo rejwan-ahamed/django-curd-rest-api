@@ -19,7 +19,9 @@ This command will start the virtual environment
 
     3. python manage.py migrate
 
-    4. Insert the sql file in the following database
+    4. change port to 3306 in setting file
+
+    5. Insert the sql file in the following database
 ## Start server
     1. pipshell
     
