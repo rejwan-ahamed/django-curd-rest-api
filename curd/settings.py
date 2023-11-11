@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'store',
     'cars',
     'customer',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'curd.wsgi.application'
 
+#rest framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
